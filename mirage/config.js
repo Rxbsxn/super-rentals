@@ -1,7 +1,7 @@
 export default function() {
   this.namespace = '/api';
 
-  this.get('/rentals', () => {
+  this.get('/rentals', function() {
     return {
       data: [{
         type: 'rentals',
@@ -10,7 +10,7 @@ export default function() {
           title: 'Grand Old Mansion',
           owner: 'Veruca Salt',
           city: 'San Francisco',
-          propertyType: 'Estate',
+          group: "Estate",
           bedrooms: 15,
           image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg'
         }
@@ -21,7 +21,7 @@ export default function() {
           title: 'Urban Living',
           owner: 'Mike Teavee',
           city: 'Seattle',
-          propertyType: 'Condo',
+          group: "Condo",
           bedrooms: 1,
           image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg'
         }
@@ -32,7 +32,7 @@ export default function() {
           title: 'Downtown Charm',
           owner: 'Violet Beauregarde',
           city: 'Portland',
-          propertyType: 'Apartment',
+          group: "Apartment",
           bedrooms: 3,
           image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
         }
