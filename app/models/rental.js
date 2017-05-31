@@ -5,7 +5,7 @@ export default Model.extend({
   title: attr(),
   owner: attr(),
   city: attr(),
-  propertyType: attr(),
+  group: attr(),
   image: attr(),
   bedrooms: attr(),
   description: attr()
