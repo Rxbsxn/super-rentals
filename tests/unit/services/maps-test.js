@@ -1,5 +1,5 @@
 import { moduleFor, test } from 'ember-qunit';
-import Ember from 'ember'
+import Ember from 'ember';
 
 const DUMMY_ELEMENT = {};
 
@@ -12,8 +12,7 @@ let MapUtilStub = Ember.Object.extend({
 });
 
 moduleFor('service:maps', 'Unit | Service | maps', {
-  // Specify the other units that are required for this test.
-  // needs: ['service:foo']
+  needs: ['util:google-maps']
 });
 
 test('should create a new map if one isnt cached for location', function (assert) {
